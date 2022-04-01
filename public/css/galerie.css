@@ -1,0 +1,35 @@
+/* galerie */
+
+* {
+    color: #FFF;
+}
+
+#galerie_content1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+}
+
+#galerie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    height: auto;
+    gap: 2vw;
+    margin-bottom: 5vw;
+    margin-top: 5vw;
+}
+
+#galerie img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+
+/* formulaire */

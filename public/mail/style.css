@@ -1,0 +1,96 @@
+@import"https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap";
+@import"https://use.typekit.net/wxe6mux.css";
+body {
+    margin: 0;
+    padding: 0;
+    font-family: termina, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.evenement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    margin: 1em;
+}
+
+h1 {
+    font-family: termina, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2em;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.contact form {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input {
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 2px solid pink;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: termina, sans-serif;
+    font-weight: 300;
+    font-style: normal
+}
+
+.contact textarea {
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+    margin: 1em 0;
+    border: 2px solid pink;
+    border-radius: 5px;
+    font-family: termina, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: transparent;
+}
+
+.contact [type="submit"] {
+    width: 100%;
+    background: pink;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-family: termina, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.contact [type="submit"]:hover {
+    background: rgb(253, 171, 185);
+}
+
+@media (prefers-color-scheme: dark) {
+    label {
+        color: #fff;
+    }
+}

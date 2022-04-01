@@ -1,0 +1,112 @@
+@import'link.scss';
+@import'keyframe.scss';
+@import'media-queries.scss';
+@import'var.scss';
+body {
+    background-image: url(../img/bg/la_f.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+    flex-direction: column;
+    font-family: termina, sans-serif;
+}
+
+form {
+    width: 50vw;
+    padding: 30px;
+    background: #fff;
+    border-radius: 1em;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+input {
+    display: block;
+    width: 95%;
+    padding: 1em;
+    border-radius: 5px;
+    font-family: termina, sans-serif;
+    font-weight: 200;
+}
+
+label {
+    color: #888;
+    font-size: 18px;
+}
+
+button {
+    float: right;
+    background-color: #F1F1F1;
+    padding: 1em 0;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    transition: 250ms;
+    font-family: termina, sans-serif;
+    font-weight: 300;
+}
+
+button:hover {
+    background-color: pink;
+    color: #444;
+}
+
+.error {
+    background: #F2DEDE;
+    color: #A94442;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+.success {
+    background: #D4EDDA;
+    color: #40754C;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.ca {
+    font-size: 14px;
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: #444;
+}
+
+.ca:hover {
+    text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+    form {
+        background-color: #121212;
+    }
+    button {
+        background-color: #444;
+    }
+    h1,
+    h2,
+    span,
+    button {
+        color: #fff;
+    }
+}

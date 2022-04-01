@@ -1,0 +1,19 @@
+body {
+    height: 1000VH;
+}
+
+#sidebar.fixed {
+    position: fixed;
+    top: 0;
+    margin-top: 20px;
+    background: #000;
+}
+
+#sidebar {
+    z-index: 5;
+    position: absolute;
+    top: 110px;
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+}

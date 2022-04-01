@@ -1,0 +1,270 @@
+@font-face {
+    font-family: 'gilroy';
+    src: url(../font/Gilroy-ExtraBold.woff) format('woff')
+}
+
+:root {
+    color: #000;
+}
+
+:root:hover {
+    color: #ff808b;
+}
+
+::selection {
+    background-color: #c2b84b
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'gilroy';
+    background: #444;
+}
+
+a {
+    color: inherit;
+}
+
+.app {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app span {
+    color: #ddd;
+    font-size: 8vmin;
+}
+
+.select {
+    display: flex;
+    height: 0vh;
+    width: 100vw;
+    vertical-align: center;
+    align-items: center;
+}
+
+.ress {
+    height: 96vh;
+    width: 45vw;
+    background-color: #F7E620;
+    border-radius: 1em;
+    display: flex;
+    margin: 2em;
+    text-align: center;
+}
+
+.ress h1 {
+    text-align: center;
+    text-decoration: none;
+    font-size: 10vmin;
+    vertical-align: center;
+}
+
+.cards-wrapper {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4rem;
+    padding: 4rem;
+    margin: 0 auto;
+    width: max-content;
+}
+
+.card {
+    font-family: 'gilroy';
+    height: 20em;
+    width: 15em;
+    font-size: 1.5em;
+    color: white;
+    border-radius: 1em;
+    padding: 1em;
+    display: flex;
+    align-items: flex-start;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 5em -1em black;
+    position: relative;
+    overflow: hidden;
+    border: 10px solid #F7E620;
+    text-decoration: none;
+}
+
+.card_back_code {
+    background-image: url(../img/code-1.jpg);
+    background-size: cover;
+}
+
+.card_back {
+    background-image: url(../img/code.jpg);
+    background-size: cover;
+}
+
+.card_back_105 {
+    background-image: url(../img/actu-rap.png);
+    background-size: cover;
+}
+
+.card_back_port {
+    background-image: url(../img/portfolio.png);
+    background-size: cover;
+}
+
+.card h1 {
+    margin: 0;
+    font-size: 1.5em;
+    line-height: 1.2em;
+}
+
+.card p {
+    font-size: 0.75em;
+    font-family: 'gilroy';
+    margin-top: 0.5em;
+    line-height: 2em;
+}
+
+.card .tags {
+    display: flex;
+}
+
+.card .tags .tag {
+    font-size: 0.75em;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 0.3rem;
+    padding: 0 0.5em;
+    margin-right: 0.5em;
+    line-height: 1.5em;
+}
+
+.card:hover .tags .tag {
+    color: white;
+}
+
+.card .date {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0.75em;
+    padding: 1em;
+    line-height: 1em;
+    opacity: .8;
+}
+
+.card:before,
+.card:after {
+    content: '';
+    transform: scale(0);
+    transform-origin: top left;
+    border-radius: 50%;
+    position: absolute;
+    left: -50%;
+    top: -50%;
+    z-index: -5;
+    transition: all, var(--transition-time);
+    transition-timing-function: ease-in-out;
+}
+
+.card:before {
+    background: #ddd;
+    width: 250%;
+    height: 250%;
+}
+
+.card:after {
+    background: white;
+    width: 200%;
+    height: 200%;
+}
+
+.card:hover {
+    color: var(--color);
+}
+
+.card-grid-space .num {
+    font-size: 3em;
+    margin-bottom: 1.2rem;
+    margin-left: 1rem;
+}
+
+.info {
+    font-size: 1.2em;
+    display: flex;
+    padding: 1em 3em;
+    height: 3em;
+}
+
+.info img {
+    height: 3em;
+    margin-right: 0.5em;
+}
+
+.info h1 {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1285px) {
+    .cards-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .cards-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .info {
+        justify-content: center;
+    }
+    .card-grid-space .num {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cards-wrapper {
+        padding: 4rem 2rem;
+    }
+    .card {
+        max-width: calc(100vw - 4rem);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .info {
+        display: block;
+        text-align: center;
+    }
+    .info h1 {
+        margin: 0;
+    }
+}
+
+.card:hover .js {
+    background-color: #F2BF26;
+}
+
+.card:hover .html {
+    background-color: #E65226;
+}
+
+.card:hover .css {
+    background-color: #0B73B8;
+}
+
+.card:hover .php {
+    background-color: #8993BE;
+}

@@ -1,0 +1,91 @@
+    @import'link.scss';
+    @import'keyframe.scss';
+    @import'media-queries.scss';
+    @import'var.scss';
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .main {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        margin: 3em;
+        overflow: hidden;
+        .left_album {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 50%;
+            .album {
+                display: flex;
+                flex-direction: column;
+                img {
+                    width: 40vw;
+                    border-radius: 1em;
+                }
+                .text {
+                    h1 {
+                        font-family: termina, sans-serif;
+                        font-size: 2em;
+                        font-weight: 600;
+                        font-style: normal;
+                        margin: 0;
+                    }
+                    h2 {
+                        font-family: termina, sans-serif;
+                        font-weight: 400;
+                        font-style: normal;
+                        font-size: 1.5em;
+                        margin: 0;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+        .right_tracks {
+            display: flex;
+            flex-direction: column;
+            overflow-x: scroll;
+            margin: 2em;
+            height: 100vh;
+            width: 50%;
+            gap: 0;
+            a {
+                margin: 0;
+                &:hover {
+                    background-color: #afafaf;
+                }
+                .track {
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                    .text {
+                        padding: 0.5em;
+                        border-bottom: 2px solid #131313;
+                        font-family: termina, sans-serif;
+                        font-weight: 400;
+                        font-style: normal;
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+    }
+    
+    @media (prefers-color-scheme: dark) {
+        .main {
+            .right_tracks {
+                a {
+                    &:hover {
+                        background-color: #363636;
+                    }
+                }
+            }
+        }
+    }
